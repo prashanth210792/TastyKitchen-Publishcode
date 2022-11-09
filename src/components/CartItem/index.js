@@ -20,7 +20,8 @@ const CartItem = props => (
       }
 
       return (
-        <li className="cart-item" testid="cartItem">
+        /* <li className="cart-item" testid="cartItem"> */
+        <li className="cart-item">
           <div className="cart-item-info">
             <img src={imageUrl} alt={name} className="cart-item-image" />
             <h1 className="cart-item-desktop-name">{name}</h1>
@@ -33,23 +34,23 @@ const CartItem = props => (
                 className="decrement-quantity"
                 type="button"
                 onClick={decreaseQuantity}
-                testid="decrement-quantity"
+                // testid="decrement-quantity"
               >
                 <BsDashSquare size={16} />
               </button>
-              <p testid="item-quantity" className="item-quantity">
-                {quantity}
-              </p>
+              {/* <p testid="item-quantity" className="item-quantity"> */}
+              <p className="item-quantity">{quantity}</p>
               <button
                 className="increment-quantity"
                 type="button"
                 onClick={increaseQuantity}
-                testid="increment-quantity"
+                // testid="increment-quantity"
               >
                 <BsPlusSquare size={16} />
               </button>
             </div>
-            <p className="price" testid="total-price">
+            {/* <p className="price" testid="total-price"> */}
+            <p className="price">
               <FaRupeeSign size={12} /> {cost * quantity}
             </p>
           </div>

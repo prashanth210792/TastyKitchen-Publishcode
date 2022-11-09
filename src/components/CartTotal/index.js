@@ -1,4 +1,4 @@
-import {FaRupeeSign} from 'react-icons/fa'
+// import {FaRupeeSign} from 'react-icons/fa'
 import CartContext from '../../context/CartContext'
 
 import './index.css'
@@ -24,9 +24,9 @@ const CartTotal = props => {
             <hr className="cart-hr-line" />
             <div className="cart-total-container">
               <h1 className="total-text">Order Total:</h1>
-              {/* <div className="total-container" testid="total-price"> */}
               <div className="total-container">
-                <p testid="total-price" className="total-price">
+                {/* <p testid="total-price" className="total-price"> */}
+                <p className="total-price">
                   {/* <FaRupeeSign size={18} /> {totalOrderCost} */}
                   {parseFloat(totalOrderCost).toFixed(2)}
                 </p>
